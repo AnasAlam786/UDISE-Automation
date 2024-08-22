@@ -57,7 +57,7 @@ driver.find_element(By.XPATH, "//li[@class='shadow-lg orangeBack']").click()
 driver.get("https://sdms.udiseplus.gov.in/g1/#/school/2185508/listAllStudentCy")
 
 
-pen=["21345212399"]
+pen=["123"]
 for num in pen:
     
     search = driver.find_element(By.ID, "mat-input-1")
