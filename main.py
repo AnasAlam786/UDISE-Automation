@@ -41,7 +41,7 @@ base64_image = driver.execute_script("""
         return canvas.toDataURL('image/png');
     }
     return null;""")
-api_key = 'K81986050988957'
+api_key = 'api_key'
 captcha = image_to_text(api_key, base64_image)
 
 driver.find_element(By.ID, "captcha").send_keys(captcha)
