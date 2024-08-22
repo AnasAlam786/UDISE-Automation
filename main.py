@@ -27,8 +27,8 @@ driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install(
 
 driver.get("https://sdms.udiseplus.gov.in/p1/v1/login?state-id=109")
 
-driver.find_element(By.ID, "username-field").send_keys("09041404306")
-driver.find_element(By.ID, "password-field").send_keys("Falak@123")
+driver.find_element(By.ID, "username-field").send_keys("username")
+driver.find_element(By.ID, "password-field").send_keys("password")
 
 base64_image = driver.execute_script("""
     var img = document.getElementById('captchaImage');
