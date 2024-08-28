@@ -6,7 +6,7 @@ from selenium.webdriver.edge.service import Service as EdgeService
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 import requests
 import time
-
+#WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, "result-item")))
 
 def image_to_text(api_key, base64_image):
     url = 'https://api.ocr.space/parse/image'
